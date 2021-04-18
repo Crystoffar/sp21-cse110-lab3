@@ -15,7 +15,7 @@ h1 {
 }
 #entry1, #entry2, #entry3 {
     border: 5px solid lightslategray;
-    padding: 1em;
+    padding: 2em 1em 2em 1em;
     width: 20em;
     margin: auto;
 }
@@ -27,9 +27,15 @@ h2 {
 }
 nav {
     position:fixed;
-    border: 2px solid lightsteelblue;
+    border-width: 2px;
+    border-style: solid;
+    border-color: lightsteelblue;
+    border-radius: 8px;
     background-color: gray;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 p {
     font-size: 20px;
