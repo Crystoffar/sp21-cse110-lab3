@@ -1,7 +1,8 @@
 body {
-    color: #eee;
+    color: rgb(238,238,238);
     background-color: #121212;
 }
+/*Links*/
 a {
-    color: #809fff
+    color: hsl(225,100,75)
 }
