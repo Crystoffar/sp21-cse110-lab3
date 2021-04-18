@@ -1,1 +1,1 @@
-The Github Page is https://crystoffar.github.io/Lab2/
+The Github Page is https://crystoffar.github.io/sp21-cse110-lab3/
