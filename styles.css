@@ -6,3 +6,7 @@ body {
 a {
     color: hsl(225,100,75)
 }
+h1 {
+    font-size: 1in;
+    font-family: 'Merriweather', serif;
+}
