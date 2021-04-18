@@ -10,8 +10,8 @@ assignees: ''
 ### Feature Description
 Describe what feature you would like to request.
 
-###Implementation
+### Implementation
 How should this feature be implemented.
 
-###Desired behavior
+### Desired behavior
 What should this feature be able to do.
