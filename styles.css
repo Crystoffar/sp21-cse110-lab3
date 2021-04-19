@@ -12,6 +12,8 @@ h1 {
     font-size: 1in;
     font-family: 'Merriweather', serif;
     position: static;
+    color: powderblue;
+    text-decoration: underline;
 }
 #entry1, #entry2, #entry3 {
     border: 5px solid lightslategray;
