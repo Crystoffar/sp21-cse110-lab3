@@ -77,3 +77,24 @@ button:active {
     background-color: palevioletred;
     color: lavender;
 }
+
+.flex-box {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    background-color: darkslategrey;
+    align-content: center;
+}
+
+.flex-box > div {
+    background-color: slateblue;
+}
+
+.grid-container {
+    display: grid;
+    background-color: darkred;
+    grid-template-columns: auto auto;
+}
+.grid-item {
+    padding: 10px;
+}
