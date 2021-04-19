@@ -65,3 +65,13 @@ video {
     height: 80%;
     width: 80%;
 }
+
+button:hover {
+    background-color: navy;
+    color: limegreen;
+}
+
+button:active {
+    background-color: palevioletred;
+    color: lavender;
+}
