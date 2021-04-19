@@ -1,3 +1,6 @@
+* {
+    text-align: center;
+}
 body {
     color: rgb(238,238,238);
     background-color: #121212;
@@ -8,7 +11,6 @@ a {
 }
 h1 {
     margin: auto;
-    text-align:center;
     font-size: 1in;
     font-family: 'Merriweather', serif;
     position: static;
@@ -104,4 +106,24 @@ button:active {
         color: black;
         background-color: dimgrey;
     }
+}
+a[target] {
+    background-color: fuchsia;
+}
+
+div h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: lightsalmon;
+}
+
+div + div {
+    background-color: olive;
+}
+
+div ~ div {
+    color: cyan;
+}
+
+h3.random {
+    background-color:darkkhaki;
 }
