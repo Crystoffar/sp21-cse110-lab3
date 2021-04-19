@@ -98,3 +98,10 @@ button:active {
 .grid-item {
     padding: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    body {
+        color: black;
+        background-color: dimgrey;
+    }
+}
