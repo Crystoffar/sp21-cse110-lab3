@@ -17,9 +17,9 @@
         </header>
         <nav>
             <ul>
-                <li><a href="#entry1">4/9/2021</a></li> 
-                <li><a href="#entry2">4/10/2021</a></li>
-                <li><a href="#entry3">4/11/2021</a></li>   
+                <li><a href="#entry1" target="navlink">4/9/2021</a></li> 
+                <li><a href="#entry2" target="navlink">4/10/2021</a></li>
+                <li><a href="#entry3" target="navlink">4/11/2021</a></li>   
             </ul>
         </nav>
         <main>
@@ -31,7 +31,7 @@
                     <summary><strong>Summary</strong></summary>
                     <p>Nothing of note happened.</p>
                 </details>
-                <h3>Highlights and Lowlights</h3>
+                <h3 class="random">Highlights and Lowlights</h3>
                 <ol>
                     <li><span style=color:chartreuse><b>Poggers</b></span> Moment</li>
                     <li><span style=color:yellow><b>Resident Sleeper</b></span> Moment</li>
@@ -151,64 +151,87 @@
                     
                     Erat velit scelerisque in dictum non consectetur. At consectetur lorem donec massa sapien. Nulla aliquet enim tortor at. Vitae aliquet nec ullamcorper sit amet risus nullam. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Dui sapien eget mi proin. Urna duis convallis convallis tellus. Nisl rhoncus mattis rhoncus urna neque viverra. Tristique senectus et netus et malesuada fames. Varius quam quisque id diam. Tincidunt praesent semper feugiat nibh sed. Molestie nunc non blandit massa enim nec.
                 </p>
-                <h3>Picture of the Day</h3>
-                <img src="img/random3.jpg" alt="person on laptop">
-                <h3>Song of the Day</h3>
-                <audio src="audio/track3.mp3" controls></audio>
-                <h3>Video of the Day</h3>
-                <video src="video/fish.mp4" controls></video>
+                <div class="flex-box">
+                    <div>
+                        <h3>Picture of the Day</h3>
+                        <img src="img/random3.jpg" alt="person on laptop">
+                    </div>
+                    <div>
+                        <h3>Song of the Day</h3>
+                        <audio src="audio/track3.mp3" controls></audio>
+                    </div>
+                    <div>
+                        <h3>Video of the Day</h3>
+                        <video src="video/fish.mp4" controls></video>
+                    </div>
+                </div>
             </section>
 
             <hr>
-
             <section>
                 <form id="newentry">
                     <fieldset>
                     <legend>New Entry</legend>
-                    Entry Number: <input list="entrynumbers" name="entrynum" id="entrynum">
-                    <datalist id="entrynumbers">
-                        <option value = "4">
-                        <option value = "5">
-                        <option value = "6">
-                        <option value = "7">      
-                    </datalist>
-                    Entry Date: <input type = "date" name = "entry_date" />
-                    <br>
-                    Which Elements: <input type = "checkbox" name = "summary" value = "on"> Summary
-                                    <input type = "checkbox" name = "highandlow" value = "on"> Highlights and Lowlights 
-                                    <input type = "checkbox" name = "venting" value = "on"> Venting 
-                                    <input type = "checkbox" name = "pic" value = "on"> PIcture of the Day
-                                    <input type = "checkbox" name = "song" value = "on"> Song of the Day
-                                    <input type = "checkbox" name = "vod" value = "on"> Video of the Day
-                    <br>
-                    Summary: <input type="text" name="summary">
-                    <br>
-                    Highlights and Lowlights: 
-                    <select id="highlow">
-                        <option value="best">Best Moment</option>
-                        <option value="avg">Average Moment</option>
-                        <option value="worst">Worst Moment</option>
-                        </select>
-                    <input type="text" name="moment">
-                    <br>
-                    Venting: <br>
-                    <textarea name="venting" cols="30" rows="10">
+
+                    <div class="grid-container">
+                    <div class="grid-item">
+                        Entry Number: <input list="entrynumbers" name="entrynum" id="entrynum">
+                        <datalist id="entrynumbers">
+                            <option value = "4">
+                            <option value = "5">
+                            <option value = "6">
+                            <option value = "7">      
+                        </datalist>
+                    </div>
+                    <div class="grid-item">
+                        Entry Date: <input type = "date" name = "entry_date" />
+                    </div>
+                    <div class="grid-item">
+                        Which Elements: <input type = "checkbox" name = "summary" value = "on"> Summary
+                                        <input type = "checkbox" name = "highandlow" value = "on"> Highlights and Lowlights 
+                                        <input type = "checkbox" name = "venting" value = "on"> Venting 
+                                        <input type = "checkbox" name = "pic" value = "on"> PIcture of the Day
+                                        <input type = "checkbox" name = "song" value = "on"> Song of the Day
+                                        <input type = "checkbox" name = "vod" value = "on"> Video of the Day
+                    </div>
+                    <div class="grid-item">
+                        Summary: <input type="text" name="summary">
+                    </div>
+                    <div class="grid-item">
+                        Highlights and Lowlights:
+                        <select id="highlow">
+                            <option value="best">Best Moment</option>
+                            <option value="avg">Average Moment</option>
+                            <option value="worst">Worst Moment</option>
+                            </select>
+                        <input type="text" name="moment">
+                    </div> 
+                    <div class="grid-item">
+                        Venting: <br>
+                        <textarea name="venting" cols="30" rows="10">
 Vent here...
-                    </textarea>
-                    <br>
-                    Upload Picture: <br>
-                    <input type = "file" name = "fileupload" accept = "image/*" />
-                    <br>
-                    Upload Song: <br>
-                    <input type = "file" name = "fileupload" accept = "audio/*" />
-                    <br>
-                    Upload Video: <br>
-                    <input type = "file" name = "fileupload" accept = "video/*" />
-                    <br>
-                    When to update:
-                    <input type = "radio" name = "updatetime" value = "now"> Now
-                    <input type = "radio" name = "updatetime" value = "now"> Later
-                    <br>
+                        </textarea>
+                    </div>
+                    <div class="grid-item">
+                        Upload Picture: <br>
+                        <input type = "file" name = "fileupload" accept = "image/*" />
+                    </div>
+                    <div class="grid-item">
+                        Upload Song: <br>
+                        <input type = "file" name = "fileupload" accept = "audio/*" />
+                    </div>
+                    <div class="grid-item">
+                        Upload Video: <br>
+                        <input type = "file" name = "fileupload" accept = "video/*" />
+                    </div>
+                    <div class="grid-item">
+                        When to update:
+                        <input type = "radio" name = "updatetime" value = "now"> Now
+                        <input type = "radio" name = "updatetime" value = "now"> Later
+                    </div>
+                    </div>
+
+                    
                     </fieldset>
                 </form>
 

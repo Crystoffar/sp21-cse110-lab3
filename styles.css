@@ -1,3 +1,6 @@
+* {
+    text-align: center;
+}
 body {
     color: rgb(238,238,238);
     background-color: #121212;
@@ -8,10 +11,11 @@ a {
 }
 h1 {
     margin: auto;
-    text-align:center;
     font-size: 1in;
     font-family: 'Merriweather', serif;
     position: static;
+    color: powderblue;
+    text-decoration: underline;
 }
 #entry1, #entry2, #entry3 {
     border: 5px solid lightslategray;
@@ -47,4 +51,79 @@ ol {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 10ex;
+}
+img {
+    display: block;
+    max-width: 1366px;
+}
+
+video {
+    margin-left: 10%;
+    margin-right: 10%;
+    max-height: 768px;
+    max-width: 1366px;
+    height: 80%;
+    width: 80%;
+}
+
+audio {
+    display: inline-block;
+    margin-left: 40%;
+}
+button:hover {
+    background-color: navy;
+    color: limegreen;
+}
+
+button:active {
+    background-color: palevioletred;
+    color: lavender;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    background-color: darkslategrey;
+    align-content: center;
+}
+
+.flex-box > div {
+    background-color: slateblue;
+}
+
+.grid-container {
+    display: grid;
+    background-color: darkred;
+    grid-template-columns: auto auto;
+}
+.grid-item {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        color: black;
+        background-color: dimgrey;
+    }
+}
+a[target] {
+    background-color: fuchsia;
+}
+
+div h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: lightsalmon;
+}
+
+div + div {
+    background-color: olive;
+}
+
+div ~ div {
+    color: cyan;
+}
+
+h3.random {
+    background-color:darkkhaki;
 }
